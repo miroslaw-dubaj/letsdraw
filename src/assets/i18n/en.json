@@ -1,0 +1,31 @@
+{
+    "title": "Draw for 2020 Gifts!",
+    "loginDialog": {
+        "welcome": "Welcome User",
+        "email": "Enter your email",
+        "password": "Enter your password",
+        "login": "Sign in",
+        "signup": "Sign up",
+        "logout": "Log Out",
+        "errors": {
+            "required": "You must enter a value",
+            "email": "Not a valid email"
+        }
+    },
+    "drawDialog": {
+        "congrats": "Congratulations ",
+        "drawed": "You have drawed "
+    },
+    "user" : {
+        "draw": "User did draw",
+        "didDraw": "You already drawed!",
+        "notDraw": "User didn't draw",
+        "created": "User created",
+        "logged": "User logged in!"
+    },
+    "notification": {
+        "success": "SUCCESS",
+        "error": "ERROR"
+    },
+    "draw": "Draw a name!"
+}

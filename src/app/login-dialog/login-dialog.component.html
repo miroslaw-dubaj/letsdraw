@@ -1,0 +1,26 @@
+<h1 mat-dialog-title>
+  {{ 'loginDialog.welcome' | translate }}
+</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>{{ 'loginDialog.email' | translate }}</mat-label>
+    <input matInput placeholder="pat@example.com" [formControl]="email" required>
+    <button mat-icon-button matSuffix disabled>
+      <mat-icon>email</mat-icon>
+    </button>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>{{ 'loginDialog.password' | translate }}</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'" [formControl]="password">
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  
+  <button *ngIf="!(authService.user | async)" mat-button (click)="login()" [disabled]="!email || !password">{{'loginDialog.login' | translate }}</button>
+  <button *ngIf="!(authService.user | async)" mat-button (click)="signup()" [disabled]="!email || !password">{{'loginDialog.signup' | translate }}</button>
+  <button *ngIf="authService.user | async" mat-button (click)="logout()">{{'loginDialog.signup' | translate }}</button>
+</div>

@@ -1,0 +1,23 @@
+<nav>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>{{ 'title' | translate }}</span>
+      <span class="example-spacer"></span>
+      <div class="user-logged" *ngIf="authService.currentUser as user; else noUser">
+        <span>{{ user.name }}</span>
+        <button mat-mini-fab color="accent" (click)="authService.logout()">
+          <mat-icon>logout</mat-icon>
+        </button>     
+      </div>
+      <ng-template #noUser>
+        <button  mat-mini-fab color="accent" (click)="openDialog()">
+          <mat-icon>login</mat-icon>
+        </button>  
+      </ng-template>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</nav>
+<main>
+  <app-users-list *ngIf="authService.user | async"></app-users-list>
+  <router-outlet></router-outlet>
+</main>

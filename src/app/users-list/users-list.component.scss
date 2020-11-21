@@ -1,0 +1,17 @@
+section {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.example-card {
+    max-width: 200px;
+}
+  
+.mat-card-actions {
+    display: flex;
+    justify-content: center;
+    button {
+        flex: 1;
+    }
+}

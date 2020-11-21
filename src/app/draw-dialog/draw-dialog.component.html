@@ -1,0 +1,17 @@
+<h1 mat-dialog-title *ngIf="data && !rollingDices">
+  {{ 'drawDialog.drawed' | translate }}{{data.drawed}} !!!
+</h1>
+<div class="imgs" mat-dialog-content *ngIf="data as user">
+  <div class="rolling" *ngIf="rollingDices">
+    <mat-spinner></mat-spinner>
+    <img mat-card-image [src]="'assets/images/oh-' + user.name + '.webp'" [alt]="'Photo of ' + user.name">
+  </div>
+
+  <img *ngIf="!rollingDices" mat-card-image [src]="'assets/images/yes-' + user.drawed + '.webp'" [alt]="'Photo of ' + user.drawed">
+  <img *ngIf="!rollingDices" mat-card-image [src]="'assets/images/blow-' + user.name + '.webp'" [alt]="'Photo of ' + user.name">
+</div>
+
+
+<div *ngIf="!rollingDices" class="actions" mat-dialog-actions>
+  {{ 'drawDialog.congrats' | translate }}{{data.name}}
+</div>

@@ -1,0 +1,12 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.user-logged {
+    display: flex;
+    align-items: center;
+    
+    span {
+        padding: 0 1rem;
+    }   
+}

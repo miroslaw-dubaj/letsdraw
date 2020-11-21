@@ -1,0 +1,31 @@
+{
+    "title": "Losowanie prezentów na święta 2020!",
+    "loginDialog": {
+        "welcome": "Witaj",
+        "email": "Podaj email",
+        "password": "Podaj hasło",
+        "login": "Zaloguj się",
+        "signup": "Zapisz się",
+        "logout": "Wyloguj się",
+        "errors": {
+            "required": "Musisz wypełnić to pole",
+            "email": "Nieprawidłowy email"
+        }
+    },
+    "drawDialog": {
+        "congrats": "Powodzenia ",
+        "drawed": "Wylosowano: "
+    },
+    "user" : {
+        "draw": "Już po losowaniu",
+        "didDraw": "Już wylosowano!",
+        "notDraw": "Nie losowano",
+        "created": "Utworzono użytkownika",
+        "logged": "Zalogowano poprawnie!"
+    },
+    "notification": {
+        "success": "UDAŁO SIĘ!",
+        "error": "WYSTĄPIŁ BŁĄD!"
+    },
+    "draw": "Wylosuj!"
+}
