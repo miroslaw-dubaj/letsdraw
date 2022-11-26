@@ -2,6 +2,11 @@
   <mat-toolbar color="primary">
     <mat-toolbar-row>
       <span>{{ 'title' | translate }}</span>
+      <div [style.margin]="'20px'">
+        <button mat-fab ngClass="idea-button">
+          <img *ngIf="authService.currentUser as user" height="50px" [src]="'assets/images/idea-' + user.name + '.webp'" [alt]="'Photo of ' + user.name" [matTooltip]="'idea' | translate" (click)="openIdea()">
+        </button>
+      </div>
       <span class="example-spacer"></span>
       <div class="user-logged" *ngIf="authService.currentUser as user; else noUser">
         <span>{{ user.name }}</span>

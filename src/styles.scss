@@ -12,3 +12,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background:
     background-color: #FF5252;
     color: #fff;
 }
+
+.idea-button {
+    .mat-button-wrapper {
+        padding: 0 !important;
+    }
+}

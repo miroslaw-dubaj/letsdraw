@@ -1,5 +1,11 @@
 {
-    "title": "Losowanie 2020!",
+    "title": "Losowanie 2022!",
+    "idea": "Mój pomysł na prezent",
+    "ideaDialog": {
+        "info": "Wpisz swój pomysł",
+        "text": "Mój wymarzony prezent to...",
+        "submit": "Wyślij do Mikołaja!"
+    },
     "loginDialog": {
         "welcome": "Witaj",
         "email": "Podaj email",
@@ -22,6 +28,9 @@
         "notDraw": "Nie losowano",
         "created": "Utworzono użytkownika",
         "logged": "Zalogowano poprawnie!"
+    },
+    "userList": {
+        "wants": "Chciałby dostać:"
     },
     "notification": {
         "success": "UDAŁO SIĘ!",

@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AngularFireModule } from '@angular/fire';
@@ -20,6 +20,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -31,6 +32,7 @@ import { LoginDialogComponent } from './login-dialog/login-dialog.component';
 import { DrawDialogComponent } from './draw-dialog/draw-dialog.component';
 import { environment } from 'src/environments/environment';
 import { UsersListComponent } from './users-list/users-list.component';
+import { IdeaDialogComponent } from './idea-dialog/idea-dialog.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -46,7 +48,8 @@ const AngularMaterialModules: any[] = [
   MatInputModule,
   MatProgressSpinnerModule,
   MatSnackBarModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatTooltipModule,
 ];
 
 @NgModule({
@@ -54,6 +57,7 @@ const AngularMaterialModules: any[] = [
     AppComponent,
     LoginDialogComponent,
     DrawDialogComponent,
+    IdeaDialogComponent,
     UsersListComponent,
   ],
   imports: [

@@ -1,0 +1,10 @@
+<h1 mat-dialog-title *ngIf="data">
+  {{ 'ideaDialog.info' | translate }}{{data.drawed}} !!!
+</h1>
+<form [formGroup]="form">
+  <mat-form-field appearance="fill">
+    <mat-label>{{'ideaDialog.text' | translate}}</mat-label>
+    <input formControlName="idea" matInput>
+  </mat-form-field>
+  <button mat-button color="primary" mat-dialog-close (click)="onClick()">{{'ideaDialog.submit' | translate}}</button>
+</form>
