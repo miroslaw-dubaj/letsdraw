@@ -11,7 +11,6 @@ export class UsersListComponent implements OnInit {
 
   constructor(public usersService: UsersService, public translate: TranslateService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {  }
 
 }

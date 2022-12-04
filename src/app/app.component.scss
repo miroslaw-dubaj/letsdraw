@@ -10,3 +10,12 @@
         padding: 0 1rem;
     }   
 }
+
+.mat-toolbar-row {
+    @media (max-width: 400px) {
+        display: flex;
+        flex-flow: row wrap;
+        height: 160px;
+        justify-content: center;
+    }
+}

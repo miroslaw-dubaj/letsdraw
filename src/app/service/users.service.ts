@@ -2,11 +2,9 @@ import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { TranslateService } from '@ngx-translate/core';
 import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
-import { Observable } from 'rxjs';
 import { filter, map, take } from 'rxjs/operators';
 import { MatDialog } from '@angular/material/dialog';
 import { DrawDialogComponent } from '../draw-dialog/draw-dialog.component';
-import { AuthService } from './auth.service';
 
 export interface User {
   name: string;
@@ -32,36 +30,36 @@ export class UsersService {
     },
     {
       name: 'Justyna',
-      email: 'justyna',
+      email: 'justdubaj@gmail.com',
       didDraw: false,
       excluded: ['Mirek'],
     },
     {
       name: 'Aneta',
-      email: 'aneta',
+      email: 'aneta.baraniecka88@gmail.com',
       didDraw: false,
       excluded: ['Tobiasz'],
     },
     {
       name: 'Tobiasz',
-      email: 'tobiasz',
+      email: 'tobiasz.wilkowski@gmail.com',
       didDraw: false,
       excluded: ['Aneta'],
     },
     {
       name: 'Marta',
-      email: 'marta',
+      email: 'marta.baraniecka@gmail.com',
       didDraw: false,
     },
     {
       name: 'Mieczysław',
-      email: 'mietek',
+      email: 'dziadzio.miecio@interia.pl',
       didDraw: false,
       excluded: ['Teresa'],
     },
     {
       name: 'Teresa',
-      email: 'teresa',
+      email: 'babcia.teresa@interia.pl',
       didDraw: false,
       excluded: ['Mieczysław'],
     },

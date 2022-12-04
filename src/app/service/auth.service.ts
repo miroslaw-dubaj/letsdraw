@@ -107,7 +107,7 @@ export class AuthService {
       if (usr.didDraw) this.usersService.visibleResult = true;
 
       if (usr.drawed) {
-        const drawedUser = this.usersService.users.find(user => user.name === this.currentUser?.drawed);
+        const drawedUser = this.usersService.users.find(user => user.name === usr.drawed);
         if (drawedUser) {
           this.usersService.drawedWantsToGet = drawedUser.wants;
         }

@@ -14,4 +14,5 @@
 
 <div *ngIf="!rollingDices" class="actions" mat-dialog-actions>
   {{ 'drawDialog.congrats' | translate }}{{data.name}}
+  <button mat-button mat-dialog-close>{{'drawDialog.close' | translate}}</button>
 </div>

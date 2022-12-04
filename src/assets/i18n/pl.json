@@ -4,7 +4,8 @@
     "ideaDialog": {
         "info": "Wpisz swój pomysł",
         "text": "Mój wymarzony prezent to...",
-        "submit": "Wyślij do Mikołaja!"
+        "submit": "Wyślij do Mikołaja!",
+        "cancel": "Anuluj"
     },
     "loginDialog": {
         "welcome": "Witaj",
@@ -20,7 +21,8 @@
     },
     "drawDialog": {
         "congrats": "Powodzenia ",
-        "drawed": "Wylosowano: "
+        "drawed": "Wylosowano: ",
+        "close": "Zamknij"
     },
     "user" : {
         "draw": "Już po losowaniu",
